@@ -1,0 +1,289 @@
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+a, a:link, a:visited, a:hover {
+  text-decoration: none;
+}
+
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: #0000;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type="submit"] {
+  box-shadow: none;
+  cursor: pointer;
+  background: none;
+  display: inline-block;
+}
+
+input:focus, input:active, button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+@font-face {
+  font-family: Futura PT;
+  src: url("FuturaPT-Medium.ff0b57e3.ttf");
+  font-weight: 500;
+}
+
+body {
+  font-family: Futura PT;
+}
+
+.road-map {
+  color: #fff;
+  background-color: #000;
+  background-image: radial-gradient(50% 50%, #ff333380 0%, #f330 100%), none;
+  background-position: 0 0, 0 0;
+  background-repeat: repeat, repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+  padding-bottom: 100px;
+}
+
+.road-map__header {
+  align-items: end;
+  gap: 151px;
+  margin: 0 0 100px 20vw;
+  padding: 100px 0 0;
+  display: flex;
+}
+
+.road-map__header .road-map__header__title {
+  width: 481px;
+  font-family: Lato, sans-serif;
+  font-size: 110px;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.road-map__header .road-map__header__text {
+  width: 288px;
+  margin-bottom: 18px;
+  font-size: 24px;
+  line-height: 130%;
+}
+
+.road-map__calendar {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 72%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.road-map__calendar .road-map__calendar__item {
+  background: linear-gradient(131deg, #ffffff4d -19.06%, #fff0 31.37%), #000;
+  border-radius: 8px;
+  width: 18%;
+  min-height: 260px;
+  margin-bottom: 30px;
+  padding: 20px 0 20px 20px;
+  box-shadow: inset 30px 30px 36px #15151580, -5px -5px 20px #0000004d;
+}
+
+.road-map__calendar .road-map__calendar__item .road-map__calendar__item__date {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 130%;
+}
+
+.road-map__calendar .road-map__calendar__item .road-map__calendar__item__event {
+  width: 80%;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+@media (width <= 1700px) {
+  .road-map__calendar {
+    width: 80%;
+  }
+
+  .road-map__calendar .road-map__calendar__item {
+    width: 23%;
+  }
+
+  .road-map__calendar__item:nth-child(5n) {
+    text-align: center;
+    width: 30%;
+    margin: 0 35% 30px;
+    padding: 20px;
+  }
+
+  .road-map__calendar__item:nth-child(5n) .road-map__calendar__item__event {
+    width: 100%;
+  }
+
+  .road-map__header {
+    gap: 130px;
+  }
+
+  .road-map__header .road-map__header__title {
+    font-size: 95px;
+  }
+
+  .road-map__header .road-map__header__text {
+    width: 270px;
+    font-size: 22px;
+  }
+}
+
+@media (width <= 1400px) {
+  .road-map__header {
+    gap: 90px;
+    margin: 0 0 100px 15vw;
+  }
+}
+
+@media (width <= 1100px) {
+  .road-map__header {
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 0 0 90px;
+  }
+
+  .road-map__header .road-map__header__title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 85px;
+  }
+
+  .road-map__header .road-map__header__text {
+    text-align: center;
+    margin: 0 auto 18px;
+  }
+
+  .road-map__calendar {
+    width: 85%;
+  }
+
+  .road-map__calendar .road-map__calendar__item {
+    width: 31%;
+  }
+
+  .road-map__calendar .road-map__calendar__item .road-map__calendar__item__event {
+    font-size: 18px;
+  }
+
+  .road-map__calendar__item:nth-child(5n) {
+    text-align: left;
+    width: 30%;
+    margin: 0 0 30px;
+  }
+
+  .road-map__calendar__item:nth-child(5n) .road-map__calendar__item__event {
+    width: 80%;
+  }
+}
+
+@media (width <= 768px) {
+  .road-map__calendar .road-map__calendar__item {
+    width: 47%;
+    min-height: 220px;
+  }
+
+  .road-map__calendar .road-map__calendar__item .road-map__calendar__item__date {
+    text-align: center;
+  }
+
+  .road-map__calendar .road-map__calendar__item .road-map__calendar__item__event {
+    width: 100%;
+  }
+
+  .road-map__calendar__item:nth-child(3n) {
+    text-align: center;
+    width: 65%;
+    margin: 0 auto 30px;
+    padding: 20px 0 0;
+  }
+}
+
+@media (width <= 550px) {
+  .road-map__header .road-map__header__title {
+    font-size: 57px;
+  }
+
+  .road-map__header .road-map__header__text {
+    font-size: 18px;
+  }
+
+  .road-map__calendar .road-map__calendar__item {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 30px;
+    padding: 20px;
+  }
+
+  .road-map__calendar .road-map__calendar__item .road-map__calendar__item__date {
+    text-align: center;
+  }
+
+  .road-map__calendar .road-map__calendar__item .road-map__calendar__item__event {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .road-map__calendar__item:nth-child(3n) {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+/*# sourceMappingURL=index.3a4b6f68.css.map */

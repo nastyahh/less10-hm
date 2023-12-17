@@ -1,0 +1,122 @@
+@import "styles.scss";
+
+@media (max-width: 1700px) {
+  .road-map__calendar {
+    width: 80%;
+    .road-map__calendar__item {
+      width: 23%;
+    }
+  }
+  .road-map__calendar__item:nth-child(5n) {
+    width: 30%;
+    margin: 0 35% 30px;
+    padding: 20px;
+    text-align: center;
+    .road-map__calendar__item__event {
+      width: 100%;
+    }
+  }
+  .road-map__header {
+    gap: 130px;
+    .road-map__header__title {
+      font-size: 95px;
+    }
+    .road-map__header__text {
+      width: 270px;
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .road-map__header {
+    margin: 0 0 100px 15vw;
+    gap: 90px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .road-map__header {
+    margin: 0 0 90px;
+    flex-wrap: wrap;
+    gap: 0;
+    .road-map__header__title {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 20px;
+      font-size: 85px;
+    }
+    .road-map__header__text {
+      text-align: center;
+      margin: 0 auto 18px;
+    }
+  }
+  .road-map__calendar {
+    width: 85%;
+    .road-map__calendar__item {
+      width: 31%;
+      .road-map__calendar__item__event {
+        font-size: 18px;
+      }
+    }
+  }
+  .road-map__calendar__item:nth-child(5n) {
+    width: 30%;
+    margin: 0 0 30px;
+    text-align: left;
+    .road-map__calendar__item__event {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .road-map__calendar {
+    .road-map__calendar__item {
+      width: 47%;
+      min-height: 220px;
+      .road-map__calendar__item__date {
+        text-align: center;
+      }
+      .road-map__calendar__item__event {
+        width: 100%;
+      }
+    }
+  }
+  .road-map__calendar__item:nth-child(3n) {
+    width: 65%;
+    margin: 0 auto 30px;
+    padding: 20px 0 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .road-map__header {
+    .road-map__header__title {
+      font-size: 57px;
+    }
+    .road-map__header__text {
+      font-size: 18px;
+    }
+  }
+  .road-map__calendar {
+    .road-map__calendar__item {
+      width: 90%;
+      margin: 0 auto 30px;
+      padding: 20px;
+      text-align: center;
+      .road-map__calendar__item__date {
+        text-align: center;
+      }
+      .road-map__calendar__item__event {
+        font-size: 16px;
+        width: 100%;
+      }
+    }
+  }
+  .road-map__calendar__item:nth-child(3n) {
+    width: 90%;
+    padding: 20px;
+  }
+}
